@@ -5,7 +5,7 @@ Basic implementation of Minesweeper in JavaFX. This project was part of the cour
 ## How to run
 
 1. Install Java on your computer
-2. Download either `Minesweeper-macOS.jar` or `Minesweeper-Windows.jar`, depending on your operating system
+2. Download either [Minesweeper-macOS.jar](https://github.com/mikkelsvartveit/javafx-minesweeper/raw/main/Minesweeper-macOS.jar) or [Minesweeper-Windows.jar](https://github.com/mikkelsvartveit/javafx-minesweeper/raw/main/Minesweeper-Windows.jar), depending on your operating system
 3. Launch the .jar file either by double clicking or by running `java -jar Minesweeper-<OS>.jar` in a terminal
 
 

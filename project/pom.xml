@@ -29,62 +29,57 @@
   			<version>3.8.0</version>
   			<configuration>
   				<release>15</release>
-  				<compilerArgs>
-  					--enable-preview
-  				</compilerArgs>
   			</configuration>
   		</plugin>
   		<plugin>
   			<artifactId>maven-surefire-plugin</artifactId>
   			<version>3.0.0-M5</version>
   			<configuration>
-  				<argLine>--enable-preview</argLine>
   			</configuration>
   		</plugin>
   		<plugin>
   			<artifactId>maven-failsafe-plugin</artifactId>
   			<version>3.0.0-M5</version>
   			<configuration>
-  				<argLine>--enable-preview</argLine>
   			</configuration>
   		</plugin>
   		
   		<!-- Package as jar -->
-<!--   		<plugin> -->
-<!--   			<groupId>org.apache.maven.plugins</groupId> -->
-<!--   			<artifactId>maven-jar-plugin</artifactId> -->
-<!--   			<configuration> -->
-<!--   				<archive> -->
-<!--   					<manifest> -->
-<!--   						<addClasspath>true</addClasspath> -->
-<!--   						<mainClass>project.App</mainClass> TODO: Change this to you main class -->
-<!--   					</manifest> -->
-<!--   				</archive> -->
-<!--   			</configuration> -->
-<!--   		</plugin> -->
-<!--   		<plugin> -->
-<!--   			<artifactId>maven-assembly-plugin</artifactId> -->
-<!--   			<configuration> -->
-<!--   				<archive> -->
-<!--   					<manifest> -->
-<!--   						<addClasspath>true</addClasspath> -->
-<!--   						<mainClass>project.App</mainClass> TODO: Change this to you main class -->
-<!--   					</manifest> -->
-<!--   				</archive> -->
-<!--   				<descriptorRefs> -->
-<!--   					<descriptorRef>jar-with-dependencies</descriptorRef> -->
-<!--   				</descriptorRefs> -->
-<!--   			</configuration> -->
-<!--   			<executions> -->
-<!--   				<execution> -->
-<!--   					<id>make-jar-with-dependencies</id> -->
-<!--   					<phase>package</phase> -->
-<!--   					<goals> -->
-<!--   						<goal>single</goal> -->
-<!--   					</goals> -->
-<!--   				</execution> -->
-<!--   			</executions> -->
-<!--   		</plugin> -->
+  		<plugin>
+   			<groupId>org.apache.maven.plugins</groupId>
+   			<artifactId>maven-jar-plugin</artifactId>
+   			<configuration>
+   				<archive>
+   					<manifest>
+   						<addClasspath>true</addClasspath>
+   						<mainClass>minesweeper.Launcher</mainClass>
+   					</manifest>
+   				</archive>
+   			</configuration>
+   		</plugin>
+   		<plugin>
+   			<artifactId>maven-assembly-plugin</artifactId>
+   			<configuration>
+   				<archive>
+   					<manifest>
+   						<addClasspath>true</addClasspath>
+   						<mainClass>minesweeper.Launcher</mainClass>
+   					</manifest>
+   				</archive>
+   				<descriptorRefs>
+   					<descriptorRef>jar-with-dependencies</descriptorRef>
+   				</descriptorRefs>
+   			</configuration>
+   			<executions>
+   				<execution>
+   					<id>make-jar-with-dependencies</id>
+   					<phase>package</phase>
+   					<goals>
+   						<goal>single</goal>
+   					</goals>
+   				</execution>
+   			</executions>
+   		</plugin>
   	</plugins>
   </build>
 </project>

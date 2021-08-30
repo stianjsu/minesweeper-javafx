@@ -1,6 +1,6 @@
 # JavaFX Minesweeper
 
-Basic implementation of Minesweeper in JavaFX. This project was part of the course `TDT4100 Object-Oriented Programming` at NTNU. Co-developed with [Stian Sulebak](https://github.com/stianjsu).
+Basic implementation of Minesweeper in JavaFX. This project was part of the course `TDT4100 Object-Oriented Programming` at NTNU. Co-developed with [Mikkel Svartveit](https://github.com/mikkelsvartveit).
 
 ## How to run
 
